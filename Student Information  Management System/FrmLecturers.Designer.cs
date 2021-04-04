@@ -39,10 +39,10 @@ namespace Student_Information__Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioMale = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioFemale = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label5
@@ -59,7 +59,7 @@ namespace Student_Information__Management_System
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(525, 397);
+            this.button1.Location = new System.Drawing.Point(509, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 41);
             this.button1.TabIndex = 19;
@@ -131,18 +131,18 @@ namespace Student_Information__Management_System
             this.label3.Text = "Gender";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton1
+            // radioMale
             // 
-            this.radioButton1.Image = ((System.Drawing.Image)(resources.GetObject("radioButton1.Image")));
-            this.radioButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton1.Location = new System.Drawing.Point(344, 301);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(138, 43);
-            this.radioButton1.TabIndex = 21;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioMale.Image = ((System.Drawing.Image)(resources.GetObject("radioMale.Image")));
+            this.radioMale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioMale.Location = new System.Drawing.Point(344, 301);
+            this.radioMale.Name = "radioMale";
+            this.radioMale.Size = new System.Drawing.Size(138, 43);
+            this.radioMale.TabIndex = 21;
+            this.radioMale.TabStop = true;
+            this.radioMale.Text = "Male";
+            this.radioMale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioMale.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -166,30 +166,30 @@ namespace Student_Information__Management_System
             "\t"});
             this.comboBox1.Location = new System.Drawing.Point(343, 360);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(152, 24);
             this.comboBox1.TabIndex = 22;
             // 
-            // radioButton2
+            // radioFemale
             // 
-            this.radioButton2.Image = ((System.Drawing.Image)(resources.GetObject("radioButton2.Image")));
-            this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radioButton2.Location = new System.Drawing.Point(488, 301);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(138, 43);
-            this.radioButton2.TabIndex = 21;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioFemale.Image = ((System.Drawing.Image)(resources.GetObject("radioFemale.Image")));
+            this.radioFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.radioFemale.Location = new System.Drawing.Point(488, 301);
+            this.radioFemale.Name = "radioFemale";
+            this.radioFemale.Size = new System.Drawing.Size(138, 43);
+            this.radioFemale.TabIndex = 21;
+            this.radioFemale.TabStop = true;
+            this.radioFemale.Text = "Female";
+            this.radioFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioFemale.UseVisualStyleBackColor = true;
             // 
             // FrmLecturers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(770, 525);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioFemale);
+            this.Controls.Add(this.radioMale);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
@@ -201,6 +201,7 @@ namespace Student_Information__Management_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmLecturers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lecturer Registration";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,9 +219,9 @@ namespace Student_Information__Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioFemale;
     }
 }

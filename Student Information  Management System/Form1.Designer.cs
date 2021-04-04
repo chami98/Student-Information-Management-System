@@ -57,7 +57,7 @@ namespace Student_Information__Management_System
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,7 +68,7 @@ namespace Student_Information__Management_System
             this.viewFacultyToolStripMenuItem});
             this.facultyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facultyToolStripMenuItem.Image")));
             this.facultyToolStripMenuItem.Name = "facultyToolStripMenuItem";
-            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
             this.facultyToolStripMenuItem.Text = "Faculty";
             // 
             // departmentToolStripMenuItem
@@ -110,8 +110,9 @@ namespace Student_Information__Management_System
             // 
             this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // addFacultyToolStripMenuItem
             // 

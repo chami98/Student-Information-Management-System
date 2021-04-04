@@ -45,5 +45,10 @@ namespace Student_Information__Management_System
             FrmLecturers frm = new FrmLecturers();
             frm.Show();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
