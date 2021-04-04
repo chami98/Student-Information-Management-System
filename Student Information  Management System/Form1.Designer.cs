@@ -41,6 +41,7 @@ namespace Student_Information__Management_System
             this.viewFacultyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCourseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addLecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +91,8 @@ namespace Student_Information__Management_System
             // 
             // lecturesToolStripMenuItem
             // 
+            this.lecturesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addLecturesToolStripMenuItem});
             this.lecturesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lecturesToolStripMenuItem.Image")));
             this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
             this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
@@ -135,6 +138,14 @@ namespace Student_Information__Management_System
             this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
             this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addCourseToolStripMenuItem.Text = "Add Course";
+            this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
+            // 
+            // addLecturesToolStripMenuItem
+            // 
+            this.addLecturesToolStripMenuItem.Name = "addLecturesToolStripMenuItem";
+            this.addLecturesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addLecturesToolStripMenuItem.Text = "Add Lectures";
+            this.addLecturesToolStripMenuItem.Click += new System.EventHandler(this.addLecturesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -166,6 +177,7 @@ namespace Student_Information__Management_System
         private System.Windows.Forms.ToolStripMenuItem lecturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addLecturesToolStripMenuItem;
     }
 }
 

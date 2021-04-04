@@ -33,5 +33,17 @@ namespace Student_Information__Management_System
             FrmDepartment frm = new FrmDepartment();
             frm.Show();
         }
+
+        private void addCourseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCourse frm = new FrmCourse();
+            frm.Show();
+        }
+
+        private void addLecturesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLecturers frm = new FrmLecturers();
+            frm.Show();
+        }
     }
 }
