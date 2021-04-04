@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Student_Information__Management_System
 {
-    public partial class FrmViewDepartmentDetails : Form
+    public partial class FrmViewLectureDetails : Form
     {
-        public FrmViewDepartmentDetails()
+        public FrmViewLectureDetails()
         {
             InitializeComponent();
         }
@@ -23,36 +23,34 @@ namespace Student_Information__Management_System
             try
             {
                 string connectionString;
-                string sql = "";
                 SqlConnection cnn;
+                string sql = "";
 
                 connectionString = "Data Source=CHAMIKARA\\SQLEXPRESS;Initial Catalog=Student_Information_Management;Integrated Security=True";
                 cnn = new SqlConnection(connectionString);
 
-
                 cnn.Open();
-                sql = "select * from department";
-                SqlDataAdapter adapter = new SqlDataAdapter(sql,cnn);
 
-                DataTable dtble = new DataTable();
-                adapter.Fill(dtble);
+                sql = "select * from lecturer";
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, cnn);
 
-                dgv.DataSource = dtble;
+                DataTable dtbl = new DataTable();
+                adapter.Fill(dtbl);
+
+                dgv.DataSource = dtbl;
 
 
 
 
+
+
+                cnn.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 MessageBox.Show("There is an error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

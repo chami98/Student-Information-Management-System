@@ -1,7 +1,7 @@
 ﻿
 namespace Student_Information__Management_System
 {
-    partial class FrmViewDepartmentDetails
+    partial class FrmViewLectureDetails
     {
         /// <summary>
         /// Required designer variable.
@@ -36,10 +36,10 @@ namespace Student_Information__Management_System
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(152, 46);
+            this.button1.Location = new System.Drawing.Point(288, 45);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 48);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Show Details";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -47,23 +47,22 @@ namespace Student_Information__Management_System
             // dgv
             // 
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(35, 131);
+            this.dgv.Location = new System.Drawing.Point(29, 143);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(464, 278);
-            this.dgv.TabIndex = 2;
-            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
+            this.dgv.Size = new System.Drawing.Size(736, 410);
+            this.dgv.TabIndex = 4;
             // 
-            // FrmViewDepartmentDetails
+            // FrmViewLectureDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 448);
+            this.ClientSize = new System.Drawing.Size(796, 591);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv);
-            this.Name = "FrmViewDepartmentDetails";
-            this.Text = "View Department Details";
+            this.Name = "FrmViewLectureDetails";
+            this.Text = "FrmViewLectureDetails";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 

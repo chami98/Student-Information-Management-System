@@ -186,6 +186,7 @@ namespace Student_Information__Management_System
             this.viewLecturerToolStripMenuItem.Name = "viewLecturerToolStripMenuItem";
             this.viewLecturerToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.viewLecturerToolStripMenuItem.Text = "View Lecturer Details";
+            this.viewLecturerToolStripMenuItem.Click += new System.EventHandler(this.viewLecturerToolStripMenuItem_Click);
             // 
             // viewStudentDetailsToolStripMenuItem
             // 

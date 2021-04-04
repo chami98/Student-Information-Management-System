@@ -79,5 +79,11 @@ namespace Student_Information__Management_System
             frmViewCourseDetails frm = new frmViewCourseDetails();
             frm.Show();
         }
+
+        private void viewLecturerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmViewLectureDetails frm = new FrmViewLectureDetails();
+            frm.Show();
+        }
     }
 }
