@@ -24,7 +24,8 @@ namespace Student_Information__Management_System
 
         private void addFacultyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmFaculty frm = new FrmFaculty();
+            frm.Show();
         }
     }
 }

@@ -16,5 +16,15 @@ namespace Student_Information__Management_System
         {
             InitializeComponent();
         }
+
+        private void FrmFaculty_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
