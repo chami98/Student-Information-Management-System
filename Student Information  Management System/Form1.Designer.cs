@@ -42,6 +42,11 @@ namespace Student_Information__Management_System
             this.addDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCourseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addLecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewDepartmentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewCourseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewLecturerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewStudentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +62,7 @@ namespace Student_Information__Management_System
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,13 +73,14 @@ namespace Student_Information__Management_System
             this.viewFacultyToolStripMenuItem});
             this.facultyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facultyToolStripMenuItem.Image")));
             this.facultyToolStripMenuItem.Name = "facultyToolStripMenuItem";
-            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
+            this.facultyToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.facultyToolStripMenuItem.Text = "Faculty";
             // 
             // departmentToolStripMenuItem
             // 
             this.departmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addDepartmentToolStripMenuItem});
+            this.addDepartmentToolStripMenuItem,
+            this.viewDepartmentDetailsToolStripMenuItem});
             this.departmentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("departmentToolStripMenuItem.Image")));
             this.departmentToolStripMenuItem.Name = "departmentToolStripMenuItem";
             this.departmentToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
@@ -83,7 +89,8 @@ namespace Student_Information__Management_System
             // courseToolStripMenuItem
             // 
             this.courseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addCourseToolStripMenuItem});
+            this.addCourseToolStripMenuItem,
+            this.viewCourseDetailsToolStripMenuItem});
             this.courseToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("courseToolStripMenuItem.Image")));
             this.courseToolStripMenuItem.Name = "courseToolStripMenuItem";
             this.courseToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
@@ -92,7 +99,8 @@ namespace Student_Information__Management_System
             // lecturesToolStripMenuItem
             // 
             this.lecturesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addLecturesToolStripMenuItem});
+            this.addLecturesToolStripMenuItem,
+            this.viewLecturerToolStripMenuItem});
             this.lecturesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lecturesToolStripMenuItem.Image")));
             this.lecturesToolStripMenuItem.Name = "lecturesToolStripMenuItem";
             this.lecturesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
@@ -101,6 +109,9 @@ namespace Student_Information__Management_System
             // 
             // studentsToolStripMenuItem
             // 
+            this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addStudentsToolStripMenuItem,
+            this.viewStudentDetailsToolStripMenuItem});
             this.studentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("studentsToolStripMenuItem.Image")));
             this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
             this.studentsToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
@@ -110,7 +121,7 @@ namespace Student_Information__Management_System
             // 
             this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -125,12 +136,13 @@ namespace Student_Information__Management_System
             // 
             this.viewFacultyToolStripMenuItem.Name = "viewFacultyToolStripMenuItem";
             this.viewFacultyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewFacultyToolStripMenuItem.Text = "View Faculty";
+            this.viewFacultyToolStripMenuItem.Text = "View Faculty Details";
+            this.viewFacultyToolStripMenuItem.Click += new System.EventHandler(this.viewFacultyToolStripMenuItem_Click);
             // 
             // addDepartmentToolStripMenuItem
             // 
             this.addDepartmentToolStripMenuItem.Name = "addDepartmentToolStripMenuItem";
-            this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.addDepartmentToolStripMenuItem.Text = "Add Department";
             this.addDepartmentToolStripMenuItem.Click += new System.EventHandler(this.addDepartmentToolStripMenuItem_Click);
             // 
@@ -144,9 +156,40 @@ namespace Student_Information__Management_System
             // addLecturesToolStripMenuItem
             // 
             this.addLecturesToolStripMenuItem.Name = "addLecturesToolStripMenuItem";
-            this.addLecturesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addLecturesToolStripMenuItem.Text = "Add Lectures";
+            this.addLecturesToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.addLecturesToolStripMenuItem.Text = "Add Lectuers";
             this.addLecturesToolStripMenuItem.Click += new System.EventHandler(this.addLecturesToolStripMenuItem_Click);
+            // 
+            // addStudentsToolStripMenuItem
+            // 
+            this.addStudentsToolStripMenuItem.Name = "addStudentsToolStripMenuItem";
+            this.addStudentsToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.addStudentsToolStripMenuItem.Text = "Add Students";
+            this.addStudentsToolStripMenuItem.Click += new System.EventHandler(this.addStudentsToolStripMenuItem_Click);
+            // 
+            // viewDepartmentDetailsToolStripMenuItem
+            // 
+            this.viewDepartmentDetailsToolStripMenuItem.Name = "viewDepartmentDetailsToolStripMenuItem";
+            this.viewDepartmentDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
+            this.viewDepartmentDetailsToolStripMenuItem.Text = "View Department Details";
+            // 
+            // viewCourseDetailsToolStripMenuItem
+            // 
+            this.viewCourseDetailsToolStripMenuItem.Name = "viewCourseDetailsToolStripMenuItem";
+            this.viewCourseDetailsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewCourseDetailsToolStripMenuItem.Text = "View Course Details";
+            // 
+            // viewLecturerToolStripMenuItem
+            // 
+            this.viewLecturerToolStripMenuItem.Name = "viewLecturerToolStripMenuItem";
+            this.viewLecturerToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.viewLecturerToolStripMenuItem.Text = "View Lecturer Details";
+            // 
+            // viewStudentDetailsToolStripMenuItem
+            // 
+            this.viewStudentDetailsToolStripMenuItem.Name = "viewStudentDetailsToolStripMenuItem";
+            this.viewStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.viewStudentDetailsToolStripMenuItem.Text = "View Student Details";
             // 
             // Form1
             // 
@@ -158,6 +201,7 @@ namespace Student_Information__Management_System
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Student Information Management System";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -179,6 +223,11 @@ namespace Student_Information__Management_System
         private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addLecturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addStudentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewDepartmentDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewCourseDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewLecturerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewStudentDetailsToolStripMenuItem;
     }
 }
 

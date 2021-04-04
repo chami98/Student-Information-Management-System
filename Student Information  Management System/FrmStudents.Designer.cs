@@ -216,6 +216,7 @@ namespace Student_Information__Management_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmStudents";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration";
             this.Load += new System.EventHandler(this.FrmStudents_Load);
             this.ResumeLayout(false);

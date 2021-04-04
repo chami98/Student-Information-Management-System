@@ -50,5 +50,22 @@ namespace Student_Information__Management_System
         {
             Application.Exit();
         }
+
+        private void addStudentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmStudents frm = new FrmStudents();
+            frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewFacultyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmViewFacultyDetails frm = new FrmViewFacultyDetails();
+                frm.Show();
+        }
     }
 }

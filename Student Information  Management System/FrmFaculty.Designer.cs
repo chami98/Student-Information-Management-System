@@ -32,12 +32,12 @@ namespace Student_Information__Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFaculty));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFacultyName = new System.Windows.Forms.TextBox();
+            this.txtFacultyID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFacultyLocation = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -64,19 +64,19 @@ namespace Student_Information__Management_System
             this.label2.Text = "Faculty ID";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtFacultyName
             // 
-            this.textBox1.Location = new System.Drawing.Point(322, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtFacultyName.Location = new System.Drawing.Point(322, 114);
+            this.txtFacultyName.Name = "txtFacultyName";
+            this.txtFacultyName.Size = new System.Drawing.Size(151, 22);
+            this.txtFacultyName.TabIndex = 1;
             // 
-            // textBox2
+            // txtFacultyID
             // 
-            this.textBox2.Location = new System.Drawing.Point(322, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtFacultyID.Location = new System.Drawing.Point(322, 175);
+            this.txtFacultyID.Name = "txtFacultyID";
+            this.txtFacultyID.Size = new System.Drawing.Size(151, 22);
+            this.txtFacultyID.TabIndex = 1;
             // 
             // button1
             // 
@@ -88,6 +88,7 @@ namespace Student_Information__Management_System
             this.button1.TabIndex = 2;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -109,12 +110,12 @@ namespace Student_Information__Management_System
             this.label4.Text = "Faculty Location";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // txtFacultyLocation
             // 
-            this.textBox3.Location = new System.Drawing.Point(322, 232);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(151, 22);
-            this.textBox3.TabIndex = 1;
+            this.txtFacultyLocation.Location = new System.Drawing.Point(322, 232);
+            this.txtFacultyLocation.Name = "txtFacultyLocation";
+            this.txtFacultyLocation.Size = new System.Drawing.Size(151, 22);
+            this.txtFacultyLocation.TabIndex = 1;
             // 
             // label5
             // 
@@ -134,9 +135,9 @@ namespace Student_Information__Management_System
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFacultyLocation);
+            this.Controls.Add(this.txtFacultyID);
+            this.Controls.Add(this.txtFacultyName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -153,12 +154,12 @@ namespace Student_Information__Management_System
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFacultyName;
+        private System.Windows.Forms.TextBox txtFacultyID;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFacultyLocation;
         private System.Windows.Forms.Label label5;
     }
 }
