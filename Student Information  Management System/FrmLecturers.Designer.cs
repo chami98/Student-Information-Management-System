@@ -32,17 +32,17 @@ namespace Student_Information__Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLecturers));
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.radioMale = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxLectures = new System.Windows.Forms.ComboBox();
             this.radioFemale = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDob = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label5
@@ -65,20 +65,21 @@ namespace Student_Information__Management_System
             this.button1.TabIndex = 19;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(344, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 22);
-            this.textBox2.TabIndex = 17;
+            this.txtEmail.Location = new System.Drawing.Point(344, 201);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(151, 22);
+            this.txtEmail.TabIndex = 17;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(344, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 18;
+            this.txtName.Location = new System.Drawing.Point(344, 140);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(151, 22);
+            this.txtName.TabIndex = 18;
             // 
             // label4
             // 
@@ -148,19 +149,19 @@ namespace Student_Information__Management_System
             this.label6.Text = "Lectures";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // comboBoxLectures
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxLectures.FormattingEnabled = true;
+            this.comboBoxLectures.Items.AddRange(new object[] {
             "Programming",
             "Database",
             "Visual Computing",
             "Mathematics",
             "\t"});
-            this.comboBox1.Location = new System.Drawing.Point(343, 360);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 24);
-            this.comboBox1.TabIndex = 22;
+            this.comboBoxLectures.Location = new System.Drawing.Point(343, 360);
+            this.comboBoxLectures.Name = "comboBoxLectures";
+            this.comboBoxLectures.Size = new System.Drawing.Size(152, 24);
+            this.comboBoxLectures.TabIndex = 22;
             // 
             // radioFemale
             // 
@@ -175,26 +176,26 @@ namespace Student_Information__Management_System
             this.radioFemale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioFemale.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dateTimeDob
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(344, 256);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(271, 22);
-            this.dateTimePicker1.TabIndex = 36;
+            this.dateTimeDob.Location = new System.Drawing.Point(344, 256);
+            this.dateTimeDob.Name = "dateTimeDob";
+            this.dateTimeDob.Size = new System.Drawing.Size(271, 22);
+            this.dateTimeDob.TabIndex = 36;
             // 
             // FrmLecturers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 525);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimeDob);
+            this.Controls.Add(this.comboBoxLectures);
             this.Controls.Add(this.radioFemale);
             this.Controls.Add(this.radioMale);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -212,16 +213,16 @@ namespace Student_Information__Management_System
 
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxLectures;
         private System.Windows.Forms.RadioButton radioFemale;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimeDob;
     }
 }

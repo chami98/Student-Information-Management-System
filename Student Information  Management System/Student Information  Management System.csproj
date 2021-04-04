@@ -70,6 +70,12 @@
     <Compile Include="FrmFaculty.Designer.cs">
       <DependentUpon>FrmFaculty.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewCourseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewCourseDetails.Designer.cs">
+      <DependentUpon>frmViewCourseDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmViewDepartmentDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaculty.resx">
       <DependentUpon>FrmFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewCourseDetails.resx">
+      <DependentUpon>frmViewCourseDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmViewDepartmentDetails.resx">
       <DependentUpon>FrmViewDepartmentDetails.cs</DependentUpon>

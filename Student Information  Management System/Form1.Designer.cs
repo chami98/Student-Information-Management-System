@@ -179,6 +179,7 @@ namespace Student_Information__Management_System
             this.viewCourseDetailsToolStripMenuItem.Name = "viewCourseDetailsToolStripMenuItem";
             this.viewCourseDetailsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewCourseDetailsToolStripMenuItem.Text = "View Course Details";
+            this.viewCourseDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewCourseDetailsToolStripMenuItem_Click);
             // 
             // viewLecturerToolStripMenuItem
             // 
