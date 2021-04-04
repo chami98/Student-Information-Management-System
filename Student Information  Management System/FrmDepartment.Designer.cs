@@ -32,9 +32,9 @@ namespace Student_Information__Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDepartment));
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDepartmentLocation = new System.Windows.Forms.TextBox();
+            this.txtDepartmentID = new System.Windows.Forms.TextBox();
+            this.txtDepartmentName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,27 +60,28 @@ namespace Student_Information__Management_System
             this.button1.TabIndex = 11;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // txtDepartmentLocation
             // 
-            this.textBox3.Location = new System.Drawing.Point(365, 271);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(151, 22);
-            this.textBox3.TabIndex = 8;
+            this.txtDepartmentLocation.Location = new System.Drawing.Point(365, 271);
+            this.txtDepartmentLocation.Name = "txtDepartmentLocation";
+            this.txtDepartmentLocation.Size = new System.Drawing.Size(151, 22);
+            this.txtDepartmentLocation.TabIndex = 8;
             // 
-            // textBox2
+            // txtDepartmentID
             // 
-            this.textBox2.Location = new System.Drawing.Point(365, 214);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 22);
-            this.textBox2.TabIndex = 9;
+            this.txtDepartmentID.Location = new System.Drawing.Point(365, 214);
+            this.txtDepartmentID.Name = "txtDepartmentID";
+            this.txtDepartmentID.Size = new System.Drawing.Size(151, 22);
+            this.txtDepartmentID.TabIndex = 9;
             // 
-            // textBox1
+            // txtDepartmentName
             // 
-            this.textBox1.Location = new System.Drawing.Point(365, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtDepartmentName.Location = new System.Drawing.Point(365, 153);
+            this.txtDepartmentName.Name = "txtDepartmentName";
+            this.txtDepartmentName.Size = new System.Drawing.Size(151, 22);
+            this.txtDepartmentName.TabIndex = 10;
             // 
             // label4
             // 
@@ -123,9 +124,9 @@ namespace Student_Information__Management_System
             this.ClientSize = new System.Drawing.Size(767, 465);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDepartmentLocation);
+            this.Controls.Add(this.txtDepartmentID);
+            this.Controls.Add(this.txtDepartmentName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -141,9 +142,9 @@ namespace Student_Information__Management_System
 
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDepartmentLocation;
+        private System.Windows.Forms.TextBox txtDepartmentID;
+        private System.Windows.Forms.TextBox txtDepartmentName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
