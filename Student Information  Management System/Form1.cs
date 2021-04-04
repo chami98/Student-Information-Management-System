@@ -27,5 +27,11 @@ namespace Student_Information__Management_System
             FrmFaculty frm = new FrmFaculty();
             frm.Show();
         }
+
+        private void addDepartmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDepartment frm = new FrmDepartment();
+            frm.Show();
+        }
     }
 }

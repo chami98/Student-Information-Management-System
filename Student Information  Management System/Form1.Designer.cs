@@ -128,6 +128,7 @@ namespace Student_Information__Management_System
             this.addDepartmentToolStripMenuItem.Name = "addDepartmentToolStripMenuItem";
             this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addDepartmentToolStripMenuItem.Text = "Add Department";
+            this.addDepartmentToolStripMenuItem.Click += new System.EventHandler(this.addDepartmentToolStripMenuItem_Click);
             // 
             // addCourseToolStripMenuItem
             // 
