@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Student_Information__Management_System
 {
@@ -23,7 +24,51 @@ namespace Student_Information__Management_System
         }
 
         private void button1_Click(object sender, EventArgs e)
+
+
         {
+
+            string moduleName = txtModuleName.Text;
+            string moduleCode = txtModuleCode.Text;
+            string creditValue = txtCreditValue.Text;
+
+
+            try
+            {
+                SqlConnection cnn;
+                string sql = "";
+                string connectionString;
+
+                connectionString = "Data Source=CHAMIKARA\\SQLEXPRESS;Initial Catalog=Student_Information_Management;Integrated Security=True";
+
+                cnn = new SqlConnection(connectionString);
+                cnn.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand command;
+
+                sql = "insert into course (moduleName,moduleCode,creditValue) values ('" + moduleName + "','" + moduleCode + "','" + creditValue + "')";
+
+                command = new SqlCommand(sql, cnn);
+                adapter.InsertCommand = new SqlCommand(sql, cnn);
+                adapter.InsertCommand.ExecuteNonQuery();
+
+                MessageBox.Show("data entered succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                command.Dispose();
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("There is an error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+
+
+
 
         }
     }
