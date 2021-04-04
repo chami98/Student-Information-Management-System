@@ -193,6 +193,7 @@ namespace Student_Information__Management_System
             this.viewStudentDetailsToolStripMenuItem.Name = "viewStudentDetailsToolStripMenuItem";
             this.viewStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.viewStudentDetailsToolStripMenuItem.Text = "View Student Details";
+            this.viewStudentDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewStudentDetailsToolStripMenuItem_Click);
             // 
             // Form1
             // 
