@@ -1,7 +1,7 @@
 ﻿
 namespace Student_Information__Management_System
 {
-    partial class Form1
+    partial class FrmHomepage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,24 +29,24 @@ namespace Student_Information__Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHomepage));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.facultyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFacultyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewFacultyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.departmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addCourseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addLecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewDepartmentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCourseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCourseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addLecturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewLecturerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStudentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,20 @@ namespace Student_Information__Management_System
             this.facultyToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.facultyToolStripMenuItem.Text = "Faculty";
             // 
+            // addFacultyToolStripMenuItem
+            // 
+            this.addFacultyToolStripMenuItem.Name = "addFacultyToolStripMenuItem";
+            this.addFacultyToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.addFacultyToolStripMenuItem.Text = "Add Faculty";
+            this.addFacultyToolStripMenuItem.Click += new System.EventHandler(this.addFacultyToolStripMenuItem_Click);
+            // 
+            // viewFacultyToolStripMenuItem
+            // 
+            this.viewFacultyToolStripMenuItem.Name = "viewFacultyToolStripMenuItem";
+            this.viewFacultyToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.viewFacultyToolStripMenuItem.Text = "View Faculty Details";
+            this.viewFacultyToolStripMenuItem.Click += new System.EventHandler(this.viewFacultyToolStripMenuItem_Click);
+            // 
             // departmentToolStripMenuItem
             // 
             this.departmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -86,6 +100,20 @@ namespace Student_Information__Management_System
             this.departmentToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.departmentToolStripMenuItem.Text = "Department";
             // 
+            // addDepartmentToolStripMenuItem
+            // 
+            this.addDepartmentToolStripMenuItem.Name = "addDepartmentToolStripMenuItem";
+            this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
+            this.addDepartmentToolStripMenuItem.Text = "Add Department";
+            this.addDepartmentToolStripMenuItem.Click += new System.EventHandler(this.addDepartmentToolStripMenuItem_Click);
+            // 
+            // viewDepartmentDetailsToolStripMenuItem
+            // 
+            this.viewDepartmentDetailsToolStripMenuItem.Name = "viewDepartmentDetailsToolStripMenuItem";
+            this.viewDepartmentDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
+            this.viewDepartmentDetailsToolStripMenuItem.Text = "View Department Details";
+            this.viewDepartmentDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewDepartmentDetailsToolStripMenuItem_Click);
+            // 
             // courseToolStripMenuItem
             // 
             this.courseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -95,6 +123,20 @@ namespace Student_Information__Management_System
             this.courseToolStripMenuItem.Name = "courseToolStripMenuItem";
             this.courseToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.courseToolStripMenuItem.Text = "Course";
+            // 
+            // addCourseToolStripMenuItem
+            // 
+            this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
+            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.addCourseToolStripMenuItem.Text = "Add Course";
+            this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
+            // 
+            // viewCourseDetailsToolStripMenuItem
+            // 
+            this.viewCourseDetailsToolStripMenuItem.Name = "viewCourseDetailsToolStripMenuItem";
+            this.viewCourseDetailsToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.viewCourseDetailsToolStripMenuItem.Text = "View Course Details";
+            this.viewCourseDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewCourseDetailsToolStripMenuItem_Click);
             // 
             // lecturesToolStripMenuItem
             // 
@@ -107,6 +149,20 @@ namespace Student_Information__Management_System
             this.lecturesToolStripMenuItem.Text = "Lecturers";
             this.lecturesToolStripMenuItem.Click += new System.EventHandler(this.lecturesToolStripMenuItem_Click);
             // 
+            // addLecturesToolStripMenuItem
+            // 
+            this.addLecturesToolStripMenuItem.Name = "addLecturesToolStripMenuItem";
+            this.addLecturesToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.addLecturesToolStripMenuItem.Text = "Add Lectuers";
+            this.addLecturesToolStripMenuItem.Click += new System.EventHandler(this.addLecturesToolStripMenuItem_Click);
+            // 
+            // viewLecturerToolStripMenuItem
+            // 
+            this.viewLecturerToolStripMenuItem.Name = "viewLecturerToolStripMenuItem";
+            this.viewLecturerToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.viewLecturerToolStripMenuItem.Text = "View Lecturer Details";
+            this.viewLecturerToolStripMenuItem.Click += new System.EventHandler(this.viewLecturerToolStripMenuItem_Click);
+            // 
             // studentsToolStripMenuItem
             // 
             this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -117,76 +173,12 @@ namespace Student_Information__Management_System
             this.studentsToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
             this.studentsToolStripMenuItem.Text = "Students";
             // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
-            // addFacultyToolStripMenuItem
-            // 
-            this.addFacultyToolStripMenuItem.Name = "addFacultyToolStripMenuItem";
-            this.addFacultyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addFacultyToolStripMenuItem.Text = "Add Faculty";
-            this.addFacultyToolStripMenuItem.Click += new System.EventHandler(this.addFacultyToolStripMenuItem_Click);
-            // 
-            // viewFacultyToolStripMenuItem
-            // 
-            this.viewFacultyToolStripMenuItem.Name = "viewFacultyToolStripMenuItem";
-            this.viewFacultyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewFacultyToolStripMenuItem.Text = "View Faculty Details";
-            this.viewFacultyToolStripMenuItem.Click += new System.EventHandler(this.viewFacultyToolStripMenuItem_Click);
-            // 
-            // addDepartmentToolStripMenuItem
-            // 
-            this.addDepartmentToolStripMenuItem.Name = "addDepartmentToolStripMenuItem";
-            this.addDepartmentToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
-            this.addDepartmentToolStripMenuItem.Text = "Add Department";
-            this.addDepartmentToolStripMenuItem.Click += new System.EventHandler(this.addDepartmentToolStripMenuItem_Click);
-            // 
-            // addCourseToolStripMenuItem
-            // 
-            this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
-            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addCourseToolStripMenuItem.Text = "Add Course";
-            this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
-            // 
-            // addLecturesToolStripMenuItem
-            // 
-            this.addLecturesToolStripMenuItem.Name = "addLecturesToolStripMenuItem";
-            this.addLecturesToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.addLecturesToolStripMenuItem.Text = "Add Lectuers";
-            this.addLecturesToolStripMenuItem.Click += new System.EventHandler(this.addLecturesToolStripMenuItem_Click);
-            // 
             // addStudentsToolStripMenuItem
             // 
             this.addStudentsToolStripMenuItem.Name = "addStudentsToolStripMenuItem";
             this.addStudentsToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.addStudentsToolStripMenuItem.Text = "Add Students";
             this.addStudentsToolStripMenuItem.Click += new System.EventHandler(this.addStudentsToolStripMenuItem_Click);
-            // 
-            // viewDepartmentDetailsToolStripMenuItem
-            // 
-            this.viewDepartmentDetailsToolStripMenuItem.Name = "viewDepartmentDetailsToolStripMenuItem";
-            this.viewDepartmentDetailsToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
-            this.viewDepartmentDetailsToolStripMenuItem.Text = "View Department Details";
-            this.viewDepartmentDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewDepartmentDetailsToolStripMenuItem_Click);
-            // 
-            // viewCourseDetailsToolStripMenuItem
-            // 
-            this.viewCourseDetailsToolStripMenuItem.Name = "viewCourseDetailsToolStripMenuItem";
-            this.viewCourseDetailsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewCourseDetailsToolStripMenuItem.Text = "View Course Details";
-            this.viewCourseDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewCourseDetailsToolStripMenuItem_Click);
-            // 
-            // viewLecturerToolStripMenuItem
-            // 
-            this.viewLecturerToolStripMenuItem.Name = "viewLecturerToolStripMenuItem";
-            this.viewLecturerToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.viewLecturerToolStripMenuItem.Text = "View Lecturer Details";
-            this.viewLecturerToolStripMenuItem.Click += new System.EventHandler(this.viewLecturerToolStripMenuItem_Click);
             // 
             // viewStudentDetailsToolStripMenuItem
             // 
@@ -195,7 +187,15 @@ namespace Student_Information__Management_System
             this.viewStudentDetailsToolStripMenuItem.Text = "View Student Details";
             this.viewStudentDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewStudentDetailsToolStripMenuItem_Click);
             // 
-            // Form1
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // FrmHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +203,8 @@ namespace Student_Information__Management_System
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FrmHomepage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Information Management System";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);

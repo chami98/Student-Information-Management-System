@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmHomepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmHomepage.Designer.cs">
+      <DependentUpon>FrmHomepage.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCourse.cs">
       <SubType>Form</SubType>
@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="FrmFaculty.Designer.cs">
       <DependentUpon>FrmFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmViewCourseDetails.cs">
       <SubType>Form</SubType>
@@ -114,8 +120,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmHomepage.resx">
+      <DependentUpon>FrmHomepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCourse.resx">
       <DependentUpon>FrmCourse.cs</DependentUpon>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaculty.resx">
       <DependentUpon>FrmFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewCourseDetails.resx">
       <DependentUpon>frmViewCourseDetails.cs</DependentUpon>
