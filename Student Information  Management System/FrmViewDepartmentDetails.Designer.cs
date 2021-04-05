@@ -29,23 +29,15 @@ namespace Student_Information__Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmViewDepartmentDetails));
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(152, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 48);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Show Details";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dgv
             // 
+            this.dgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(35, 131);
             this.dgv.Name = "dgv";
@@ -54,6 +46,19 @@ namespace Student_Information__Management_System
             this.dgv.Size = new System.Drawing.Size(464, 278);
             this.dgv.TabIndex = 2;
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(147, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(235, 48);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Show Details";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmViewDepartmentDetails
             // 
@@ -70,8 +75,7 @@ namespace Student_Information__Management_System
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Button button1;
     }
 }

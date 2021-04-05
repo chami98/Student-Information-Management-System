@@ -53,7 +53,7 @@ namespace Student_Information__Management_System
                 adapter.InsertCommand = new SqlCommand(sql, cnn);
                 adapter.InsertCommand.ExecuteNonQuery();
 
-                MessageBox.Show("data entered succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data entered succesfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 command.Dispose();
                 cnn.Close();
             }

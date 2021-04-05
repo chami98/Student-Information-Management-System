@@ -29,6 +29,7 @@ namespace Student_Information__Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmViewFacultyDetails));
             this.dgv = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -36,19 +37,24 @@ namespace Student_Information__Management_System
             // 
             // dgv
             // 
+            this.dgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(42, 128);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(464, 278);
+            this.dgv.Size = new System.Drawing.Size(473, 292);
             this.dgv.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(159, 43);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 48);
+            this.button1.Size = new System.Drawing.Size(238, 48);
             this.button1.TabIndex = 1;
             this.button1.Text = "Show Details";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,7 +64,7 @@ namespace Student_Information__Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 454);
+            this.ClientSize = new System.Drawing.Size(559, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv);
             this.Name = "FrmViewFacultyDetails";

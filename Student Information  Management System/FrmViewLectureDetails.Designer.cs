@@ -29,6 +29,7 @@ namespace Student_Information__Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmViewLectureDetails));
             this.button1 = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -36,9 +37,12 @@ namespace Student_Information__Management_System
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(288, 45);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(237, 46);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 48);
+            this.button1.Size = new System.Drawing.Size(282, 48);
             this.button1.TabIndex = 5;
             this.button1.Text = "Show Details";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,7 +66,7 @@ namespace Student_Information__Management_System
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv);
             this.Name = "FrmViewLectureDetails";
-            this.Text = "FrmViewLectureDetails";
+            this.Text = "Lecture Details";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 

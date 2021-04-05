@@ -217,12 +217,12 @@ namespace Student_Information__Management_System
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(46, 173);
+            this.label1.Location = new System.Drawing.Point(87, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(724, 113);
+            this.label1.Size = new System.Drawing.Size(679, 100);
             this.label1.TabIndex = 1;
             this.label1.Text = "Student Information Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -231,9 +231,9 @@ namespace Student_Information__Management_System
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(12, 173);
+            this.label2.Location = new System.Drawing.Point(56, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 110);
+            this.label2.Size = new System.Drawing.Size(107, 100);
             this.label2.TabIndex = 2;
             // 
             // FrmHomepage
