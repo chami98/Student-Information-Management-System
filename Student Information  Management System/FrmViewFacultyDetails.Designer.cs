@@ -67,6 +67,7 @@ namespace Student_Information__Management_System
             this.ClientSize = new System.Drawing.Size(559, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmViewFacultyDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Faculty Details";

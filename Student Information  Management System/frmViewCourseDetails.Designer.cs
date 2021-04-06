@@ -66,6 +66,7 @@ namespace Student_Information__Management_System
             this.ClientSize = new System.Drawing.Size(551, 444);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmViewCourseDetails";
             this.Text = "Course Details";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
