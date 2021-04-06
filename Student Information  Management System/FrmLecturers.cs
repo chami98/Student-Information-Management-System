@@ -45,9 +45,10 @@ namespace Student_Information__Management_System
                 string connectionString;
 
                 connectionString = "Data Source=CHAMIKARA\\SQLEXPRESS;Initial Catalog=Student_Information_Management;Integrated Security=True";
-
+                //Created connection String 
                 cnn = new SqlConnection(connectionString);
                 cnn.Open();
+                //making connection
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 SqlCommand command;
@@ -70,6 +71,11 @@ namespace Student_Information__Management_System
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

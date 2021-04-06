@@ -27,7 +27,9 @@ namespace Student_Information__Management_System
                 SqlConnection cnn;
 
                 connectionString = "Data Source=CHAMIKARA\\SQLEXPRESS;Initial Catalog=Student_Information_Management;Integrated Security=True";
+                //Created connection String    
                 cnn = new SqlConnection(connectionString);
+                //making connection
 
 
                 cnn.Open();
@@ -35,6 +37,7 @@ namespace Student_Information__Management_System
                 SqlDataAdapter adapter = new SqlDataAdapter(sql,cnn);
 
                 DataTable dtble = new DataTable();
+                //created virtual table
                 adapter.Fill(dtble);
 
                 dgv.DataSource = dtble;

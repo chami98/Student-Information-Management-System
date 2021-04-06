@@ -51,5 +51,10 @@ namespace Student_Information__Management_System
                 MessageBox.Show("Invalid username or password", "Error",MessageBoxButtons.OK , MessageBoxIcon.Error);
 
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

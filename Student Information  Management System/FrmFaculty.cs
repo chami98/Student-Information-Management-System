@@ -39,8 +39,9 @@ namespace Student_Information__Management_System
                 SqlConnection cnn;
 
                 connectionString = "Data Source=CHAMIKARA\\SQLEXPRESS;Initial Catalog=Student_Information_Management;Integrated Security=True";
+                //Created connection String 
                 cnn = new SqlConnection(connectionString);
-
+                //making connection
                 cnn.Open();
 
                 SqlCommand command;

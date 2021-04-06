@@ -50,6 +50,7 @@ namespace Student_Information__Management_System
             // 
             // dgv
             // 
+            this.dgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(38, 122);
             this.dgv.Name = "dgv";

@@ -121,6 +121,7 @@ namespace Student_Information__Management_System
             this.label3.TabIndex = 13;
             this.label3.Text = "Gender";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // radioMale
             // 
@@ -169,7 +170,7 @@ namespace Student_Information__Management_System
             this.radioFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.radioFemale.Location = new System.Drawing.Point(408, 212);
             this.radioFemale.Name = "radioFemale";
-            this.radioFemale.Size = new System.Drawing.Size(178, 43);
+            this.radioFemale.Size = new System.Drawing.Size(194, 43);
             this.radioFemale.TabIndex = 21;
             this.radioFemale.TabStop = true;
             this.radioFemale.Text = "Female";
